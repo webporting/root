@@ -1,0 +1,99 @@
+* {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+}
+html {
+          height: 100%;
+}
+body {
+          font-family: 'DM Sans', sans-serif;
+          background: #fafafa;
+          color: #171717;
+          line-height: 1.6;
+          min-height: 100%;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+}
+.container {
+          max-width: 900px;
+          margin: 0 auto;
+          padding: 0 24px;
+}
+nav {
+          padding: 32px 0;
+          margin-bottom: 80px;
+}
+.logo {
+          font-size: 18px;
+          font-weight: 700;
+          color: #171717;
+}
+main {
+          padding: 60px 0 120px;
+          flex: 1 0 auto;
+}
+h1 {
+          font-size: 64px;
+          font-weight: 700;
+          line-height: 1.1;
+          margin-bottom: 24px;
+          color: #171717;
+}
+.tagline {
+          font-size: 20px;
+          color: #525252;
+          max-width: 600px;
+          margin-bottom: 80px;
+}
+.content {
+          max-width: 600px;
+          margin-bottom: 100px;
+}
+.content p {
+          font-size: 17px;
+          color: #404040;
+          line-height: 1.7;
+          margin-bottom: 20px;
+}
+footer {
+          padding: 60px 0;
+          border-top: 1px solid #e5e5e5;
+          flex-shrink: 0;
+}
+.footer-content {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+}
+.footer-links {
+          display: flex;
+          gap: 32px;
+}
+.footer-links a {
+          color: #737373;
+          text-decoration: none;
+          font-size: 15px;
+          transition: color 0.2s;
+}
+.footer-links a:hover {
+          color: #171717;
+}
+.copyright {
+          font-size: 15px;
+          color: #a3a3a3;
+}
+@media 
+(max-width: 768px) {
+h1 {
+          font-size: 42px;
+}
+.tagline {
+          font-size: 18px;
+}
+.footer-content {
+          flex-direction: column;
+          gap: 24px;
+}
+}
