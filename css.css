@@ -84,6 +84,39 @@ footer {
           font-size: 15px;
           color: #a3a3a3;
 }
+.team-section {
+        margin-top: 48px;
+}
+.team-section h2 {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        color: #666;
+        font-weight: 500;
+}
+.team-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+}
+.team-member {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+}
+.team-member img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+}
+.team-member .name {
+        font-weight: 500;
+        color: #333;
+        font-size: 0.95rem;
+}
+.team-member .bio {
+        color: #999;
+        font-size: 0.85rem;
+}
 @media 
 (max-width: 768px) {
 h1 {
