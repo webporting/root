@@ -1,173 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <title>webport.ing projects</title>
-        
-        <meta 
-                charset="UTF-8">
-        <meta 
-                name="viewport" 
-                content="width=device-width, initial-scale=1.0">
-        <meta 
-                name="title" 
-                content="webport.ing projects">
-        <meta 
-                name="description" 
-                content="Games ported to WebGL by the webport.ing team.">
-        <link 
-                rel="stylesheet" 
-                href="css.css">
-        <link 
-                rel="preconnect" 
-                href="https://fonts.googleapis.com">
-        <link 
-                rel="preconnect" 
-                href="https://fonts.gstatic.com" 
-                crossorigin>    
-        <link 
-                href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" 
-                rel="stylesheet">
-        <link   
-                rel="icon" 
-                type="image/png" 
-                href="icons/45.webp">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="webport.ing projects">
+  <meta name="description" content="Games ported to WebGL by the webport.ing team.">
+  <title>webport.ing projects</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css.css">
+  <link rel="icon" type="image/webp" href="icons/45.webp">
+  <script src="site.js" defer></script>
 </head>
-<body>
-        <nav>
-                <div 
-                        class="container">
-                        <a 
-                                class="icon">
-                                <img 
-                                        src="icons/45.webp" 
-                                        alt="webport.ing">
-                        </a>
-                                        <a 
-                                                href="/">Home
-                        </a>
-                                        <a 
-                                                href="projects.html">Projects
-                        </a>
-                </div>
-        </nav>
-        <main>
-                <div 
-                        class="container">
-                        <h1>Projects</h1>
-                        <p 
-                                class="tagline">Games ported to WebGL by us.</p>
-                        <section 
-                                class="projects-section">
-                                <h2>All ports</h2>
-                                <div 
-                                class="projects-list">
-                                    <div 
-                                            class="project-item">
-                                            <div 
-                                                    class="project-meta">
-                                                    <a 
-                                                            href="https://github.com/webporting/untitled-goose-game" 
-                                                            class="project-name">Untitled Goose Game</a>
-                                                    <div 
-                                                            class="project-author">Bog</div>
-                                            </div>
-                                            <span 
-                                                    class="project-tag done">done</span>
-                                    </div>
-                                    <div 
-                                            class="project-item">
-                                            <div 
-                                                    class="project-meta">
-                                                    <a 
-                                                            href="https://github.com/webporting/shift-at-midnight" 
-                                                            class="project-name">Shift At Midnight</a>
-                                                    <div 
-                                                            class="project-author">Slqnt</div>
-                                            </div>
-                                            <span 
-                                                    class="project-tag done">done</span>
-                                    </div>
-                                    <div 
-                                            class="project-item">
-                                            <div 
-                                                    class="project-meta">
-                                                    <a 
-                                                            href="https://github.com/webporting/Your-Only-Move-Is-HUSTLE" 
-                                                            class="project-name">Your Only Move Is HUSTLE</a>
-                                                    <div 
-                                                            class="project-author">Bog</div>
-                                            </div>
-                                            <span 
-                                                    class="project-tag done">done</span>
-                                    </div>
-                                    <div 
-                                            class="project-item">
-                                            <div 
-                                                    class="project-meta">
-                                                    <a 
-                                                            href="https://github.com/webporting/hollow-Knight-Silksong" 
-                                                            class="project-name">Hollow Knight: Silksong</a>
-                                                    <div 
-                                                            class="project-author">EDurocks, Breadbb & Bog</div>
-                                            </div>
-                                            <span 
-                                                    class="project-tag done">Done</span>
-                                    </div>
-                                    <div 
-                                            class="project-item">
-                                            <div 
-                                                    class="project-meta">
-                                                    <a 
-                                                            class="project-name">Minecraft Legacy Console Edition</a>
-                                                    <div 
-                                                            class="project-author">98Corbins</div>
-                                            </div>
-                                            <span 
-                                                    class="project-tag wip">wip</span>
-                                    </div>
-                                    <div 
-                                            class="project-item">
-                                            <div 
-                                                    class="project-meta">
-                                                    <a 
-                                                            class="project-name">Half Life 2</a>
-                                                    <div 
-                                                            class="project-author">Slqnt</div>
-                                            </div>
-                                            <span 
-                                                    class="project-tag wip">wip</span>
-                                    </div>
-                            </div>
-                        </section>
-                </div>
-        </main>
-        <footer>
-                <div 
-                        class="container">
-                        <div 
-                                class="footer-content">
-                                <div 
-                                        class="footer-links">
-                                        <a 
-                                                href="https://github.com/webporting">GitHub</a>
-                                        <a 
-                                                href="https://discord.gg/UtucjaxGNG">Discord</a>
-                                </div>
-                                <div 
-                                        class="copyright"></div>
-                        </div>
-                </div>
-        </footer>
-    <script 
-                async src="https://www.googletagmanager.com/gtag/js?id=G-BRPEBVLGFH">
-        </script>
-    <script>
-                window.dataLayer 
-                = 
-                window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-                     gtag('js', new Date());
-                     gtag('config', 'G-BRPEBVLGFH');
-        </script>
+<body class="flex min-h-screen flex-col overflow-x-hidden bg-[#4c3e6b] text-[#f8f4ff] antialiased">
+  <nav class="py-6">
+    <div class="mx-auto flex w-[min(100%-2rem,980px)] items-center justify-between gap-6">
+      <a class="flex items-center gap-3 font-bold no-underline" href="/">
+        <img class="h-7 w-7" src="icons/45.webp" alt="">
+        <span>webport.ing</span>
+      </a>
+      <div class="flex items-center gap-5 text-sm font-bold text-[#cbbfdd]">
+        <a class="hover:text-white" href="/">home</a>
+        <a class="text-white underline underline-offset-4" href="projects.html" aria-current="page">projects</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="mx-auto w-[min(100%-2rem,980px)] flex-1">
+    <section class="max-w-2xl py-14 md:py-20" data-projects-hero>
+      <h1 class="mb-3 text-5xl font-bold leading-none md:text-6xl">projects</h1>
+      <p class="text-lg text-[#cbbfdd]">ports and stuff being worked on.</p>
+    </section>
+
+    <section class="person-page" data-person-page hidden></section>
+
+    <section class="projects-layout">
+      <h2 class="mb-3 text-lg font-bold">ports</h2>
+      <div class="project-list" data-projects></div>
+    </section>
+  </main>
+
+  <footer class="mt-20 py-6 text-[#cbbfdd]">
+    <div class="mx-auto flex w-[min(100%-2rem,980px)] items-center justify-between gap-5">
+      <span>webport.ing</span>
+      <span class="flex gap-5 font-bold">
+        <a class="hover:text-white" href="https://github.com/webporting">github</a>
+        <a class="hover:text-white" href="https://discord.gg/UtucjaxGNG">discord</a>
+      </span>
+    </div>
+  </footer>
 </body>
 </html>

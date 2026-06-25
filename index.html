@@ -1,137 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <title>webport.ing</title>
-        
-        <meta 
-                charset="UTF-8">
-        <meta 
-                name="viewport" 
-                content="width=device-width, initial-scale=1.0">
-        <meta 
-                name="title" 
-                content="webport.ing">
-        <meta 
-                name="description" 
-                content="Group of friends working with each other to port games.">
-        <link 
-                rel="stylesheet" 
-                href="css.css">
-        <link 
-                rel="preconnect" 
-                href="https://fonts.googleapis.com">
-        <link 
-                rel="preconnect" 
-                href="https://fonts.gstatic.com" 
-                crossorigin>    
-        <link 
-                href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" 
-                rel="stylesheet">
-        <link   
-                rel="icon" 
-                type="image/png" 
-                href="icons/45.webp">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="webport.ing">
+  <meta name="description" content="A small team porting games to WebGL.">
+  <title>webport.ing</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css.css">
+  <link rel="icon" type="image/webp" href="icons/45.webp">
+  <script src="site.js" defer></script>
 </head>
-<body>
-        <nav>
-                <div 
-                        class="container">
-                        <a 
-                                class="icon">
-                                <img 
-                                        src="icons/45.webp" 
-                                        alt="webport.ing">
-                        </a>
-                                        <a 
-                                                href="/">Home
-                        </a>
-                                        <a 
-                                                href="projects.html">Projects
-                        </a>
-                </div>
-        </nav>
-        <main>
-                <div 
-                        class="container">
-                        <h1>Webport.ing (NPA)</h1>
-                        <p 
-                                class="tagline">A group of webporters working together to port games to WebGL.</p>
-                        <section 
-                                class="team-section">
-                                <h2>Team</h2>
-                                <div 
-                                        class="team-grid">
-                                        <div 
-                                                class="team-member">
-                                                <img 
-                                                        src="icons/breadbb.webp" 
-                                                        alt="Member">
-                                                <div>
-                                                        <div 
-                                                                class="name">Breadbb</div>
-                                                </div>
-                                        </div>                                        
-                                        <div 
-                                                class="team-member">
-                                                <img 
-                                                        src="icons/98corbin.webp" 
-                                                        alt="Member">
-                                                <div>
-                                                        <div 
-                                                                class="name">98corbins</div>
-                                                </div>
-                                        </div>
-                                        <div 
-                                                class="team-member">
-                                                <img 
-                                                        src="icons/bog.webp" 
-                                                        alt="Member">
-                                                <div>
-                                                        <div 
-                                                                class="name">Bog</div>
-                                                </div>
-                                        </div>
-                                        <div 
-                                                class="team-member">
-                                                <img 
-                                                        src="icons/slqnt.webp" 
-                                                        alt="Member">
-                                                <div>
-                                                        <div 
-                                                                class="name">Slqnt</div>
-                                                </div>
-                                        </div>
-                                </div>
-                        </section>
-                </div>
-        </main>
-        <footer>
-                <div 
-                        class="container">
-                        <div 
-                                class="footer-content">
-                                <div 
-                                        class="footer-links">
-                                        <a 
-                                                href="https://github.com/webporting">GitHub</a>
-                                        <a 
-                                                href="https://discord.gg/UtucjaxGNG">Discord</a>
-                                </div>
-                                <div 
-                                        class="copyright"></div>
-                        </div>
-                </div>
-        </footer>
-    <script 
-                async src="https://www.googletagmanager.com/gtag/js?id=G-BRPEBVLGFH">
-        </script>
-    <script>
-                window.dataLayer 
-                = 
-                window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-                     gtag('js', new Date());
-                     gtag('config', 'G-BRPEBVLGFH');
-        </script>
+<body class="flex min-h-screen flex-col overflow-x-hidden bg-[#4c3e6b] text-[#f8f4ff] antialiased">
+  <nav class="py-6">
+    <div class="mx-auto flex w-[min(100%-2rem,980px)] items-center justify-between gap-6">
+      <a class="flex items-center gap-3 font-bold no-underline" href="/">
+        <img class="h-7 w-7" src="icons/45.webp" alt="">
+        <span>webport.ing</span>
+      </a>
+      <div class="flex items-center gap-5 text-sm font-bold text-[#cbbfdd]">
+        <a class="text-white underline underline-offset-4" href="/" aria-current="page">home</a>
+        <a class="hover:text-white" href="projects.html">projects</a>
+      </div>
+    </div>
+  </nav>
+  <main class="mx-auto w-[min(100%-2rem,980px)] flex-1">
+    <section class="max-w-2xl py-14 md:py-20">
+      <h1 class="mb-3 text-5xl font-bold leading-none md:text-6xl">webport.ing</h1>
+      <p class="mb-5 text-lg text-[#cbbfdd]">4 people porting games to web</p>
+      <p class="flex gap-5 font-bold text-[#cbbfdd]">
+        <a class="hover:text-white" href="projects.html">projects</a>
+        <a class="hover:text-white" href="https://github.com/webporting">github</a>
+      </p>
+    </section>
+    <section>
+      <h2 class="mb-4 text-xl font-bold">team</h2>
+      <div class="space-y-2" data-people></div>
+    </section>
+  </main>
+  <footer class="mt-20 py-6 text-[#cbbfdd]">
+    <div class="mx-auto flex w-[min(100%-2rem,980px)] items-center justify-between gap-5">
+      <span>webport.ing</span>
+      <span class="flex gap-5 font-bold">
+        <a class="hover:text-white" href="https://github.com/webporting">github</a>
+        <a class="hover:text-white" href="https://discord.gg/UtucjaxGNG">discord</a>
+      </span>
+    </div>
+  </footer>
 </body>
 </html>
