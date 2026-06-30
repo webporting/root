@@ -9,7 +9,7 @@
     },
     {
       "id": "98corbins",
-      "name": "98Corbins",
+      "name": "98Corbins / 98006",
       "image": "icons/98corbin.webp",
       "github": "https://github.com/dahahe1",
       "site": "https://98.c0rbin.fun/"
@@ -326,6 +326,14 @@
       "status": "done",
       "people": [
         "breadbb"
+      ]
+    },
+    {
+      "title": "GTA 5",
+      "url": "",
+      "status": "wip",
+      "people": [
+        "98corbins / 9006"
       ]
     },
     {
